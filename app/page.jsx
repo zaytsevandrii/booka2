@@ -1,15 +1,14 @@
-"use client"
-
-import Link from "next/link"
-import { useParams } from "next/navigation"
+import Hero from "@/components/Hero"
+import HomeProperties from "@/components/HomeProperties"
+import InfoBoxes from "@/components/InfoBoxes"
 
 const HomePage = () => {
-    const { id } = useParams()
     return (
-        <div>
-            <h1 className="text-3xl">Welcome {id}</h1>
-            <Link href="properties">show properties</Link>
-        </div>
+        <>
+            <Hero />
+            <InfoBoxes />
+            <HomeProperties />
+        </>
     )
 }
 
